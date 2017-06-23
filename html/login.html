@@ -1,0 +1,16 @@
+<header>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/w3.css">
+  <script type="text/javascript" src="../js/angular.min.js"></script>
+  <script type="text/javascript" src="../js/rpsapp.js"></script>
+</header>
+<body ng-app="login">
+	<div className="login-form-wrapper" ng-controller="loginController">
+      <form ng-submit="logear()">
+        <h4> Datos de usuario </h4>
+        <input ng-model="user" type="text" placeholder="Usuario"></input> <br/>
+        <input ng-model="password" type="password" placeholder="Contraseña"></input> <br/>
+        <center><input className="button" type="submit" value="Ingresar"/></center>             
+      </form>   
+    </div>
+</body>
